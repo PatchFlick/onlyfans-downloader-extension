@@ -340,9 +340,8 @@ This project is for educational purposes. Users are responsible for complying wi
 
 ## 🔗 **Support**
 
-- **Twitter**: [@extension_dev](https://twitter.com/extension_dev)
 - **Issues**: Check the console for error messages
-- **Updates**: Follow the developer on Twitter for announcements
+- **Updates**: - their never is gunna be any
 
 ---
 
