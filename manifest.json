@@ -1,0 +1,47 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 3,
+  "name": "Downloader for OnlyFans.com",
+  "version": "4.5.15",
+  "description": "Downloader for onlyfans.com. An extension that adds download buttons for OnlyFans images and videos.",
+  "icons": {
+    "128": "/assets/icon128.png",
+    "48": "/assets/icon48.png",
+    "16": "/assets/icon16.png"
+  },
+  "action": {
+    "default_icon": "/assets/icon16.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.onlyfans.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "permissions": [
+    "storage",
+    "downloads"
+  ],
+  "host_permissions": [
+    "*://*.onlyfans.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*"],
+      "matches": ["*://*.onlyfans.com/*"]
+    }
+  ]
+}

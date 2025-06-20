@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<style>
+  body {
+    text-align: center;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  body {
+    font: 18px Helvetica, sans-serif;
+    color: #333;
+  }
+
+  p {
+    display: block;
+    text-align: left;
+    width: 360px;
+    margin: 10px auto;
+  }
+
+  a {
+    color: #e67e22;
+    text-decoration: none;
+  }
+
+  em {
+    color: #e74c3c;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #e74c3c;
+    text-decoration: none;
+  }
+
+  /***** https://codepen.io/tomsterritt/pen/sknpB ******/
+  /* Radio group */
+  .segmented {
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue';
+    font-size: 90%;
+    text-align: center;
+  }
+
+  .segmented label {
+    display: block;
+    flex: 1;
+    box-sizing: border-box;
+    border: 1px solid #66b49a;
+    border-right: none;
+    color: #66b49a;
+    margin: 0;
+    padding: 0.4em;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .segmented label.checked {
+    background: #66b49a;
+    color: #fff;
+  }
+
+  .segmented.inverted label {
+    border-color: #fff;
+    color: #fff;
+    background: none;
+  }
+
+  .segmented.inverted label.checked {
+    background: #fff;
+    color: inherit;
+  }
+
+  .segmented label:first-child {
+    border-radius: 0.4em 0 0 0.4em;
+    border-right: 0;
+  }
+
+  .segmented label:last-child {
+    border-radius: 0 0.4em 0.4em 0;
+    border-right: 1px solid;
+  }
+
+  .segmented input[type='radio'] {
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+    position: absolute;
+  }
+
+  /******* https://codepen.io/imomer/pen/qoLVZg *****/
+  /* The container */
+  .container-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default checkbox */
+  .container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom checkbox */
+  .container-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .container-checkbox:hover input~.checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .container-checkbox input:checked~.checkmark {
+    background-color: #66b49a;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .container-checkbox .checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .container-checkbox input:checked~.checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .container-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+</style>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+</head>
+
+<body>
+  <script type="text/javascript" src="/popup.js"></script>
+  <em>I'd like to treat the developer a ☕️ or 🍺 or 🍕!</em>
+  <p></p>
+
+  <a href="https://ko-fi.com/Q5Q4WYZ4" target="_blank"><img height="36" style="border:0px;height:36px;"
+      src="/assets/kofi4.png" border="0" alt="Buy Me a Coffee at ko-fi.com" /></a>
+
+  <hr />
+
+  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UXZA7JF546VZ4&source=url"
+    target="_blank"><img height="64" style="border:0px;height:64px;" src="/assets/paypal.png" border="0"
+      alt="Donate at PayPal" /></a>
+
+  <hr />
+
+  <div class="container">
+    <p>
+      Video Quality Settings
+    </p>
+    <div class="segmented">
+      <label><input type="radio" name="segmented" value="full" id="full" />
+        Original</label>
+      <label><input type="radio" name="segmented" value="240" id="240" />
+        240p</label>
+      <label><input type="radio" name="segmented" value="720" id="720" />
+        720p</label>
+    </div>
+    <span id="status"></span>
+  </div>
+
+  <hr />
+
+  <label class="container-checkbox">Organize downloads into folders named after creator
+    <input type="checkbox" id="folder" />
+    <span class="checkmark"></span>
+  </label>
+  <span id="status-folder"></span>
+
+  <hr />
+  <p>
+    To use: visit onlyfans.com as you'd normally do - download buttons should
+    have been added under each post.
+  </p>
+  <hr />
+  <p>Note: You still need to follow/subscribe to the creator first.</p>
+  <hr />
+  <p>
+    <em>Note</em>: if buttons don't show up, try disabling other extensions
+    since some could interfere with this downloader (e.g. "Dark Reader" is the
+    known one).
+  </p>
+  <hr />
+  <p>Or sometimes a plain old rebooting or refreshing solves it.</p>
+  <hr />
+  <p>
+    And sometimes it does take a really long time before the download starts,
+    since the server can be slow at responding.
+  </p>
+  <hr />
+  <p>
+    <em>Batch downloading is currently unavailable due to new restrictions
+      imposed by onlyfans.</em>
+  </p>
+  <hr />
+  <p>I can be contacted at:</p>
+  <div>
+    <a target="_blank" href="https://twitter.com/extension_dev">
+      <div style="display:flex;align-items:center;justify-content:center;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:#1da1f2;">
+          <path opacity="0" d="M0 0h24v24H0z"></path>
+          <path
+            d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z">
+          </path>
+        </svg>
+        &nbsp; @extension_dev
+      </div>
+    </a>
+  </div>
+  <p>
+    I'll also use twitter to share updates if there's any known issue. 👨🏻‍💻 ❤️
+  </p>
+</body>
+
+</html>

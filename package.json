@@ -1,0 +1,48 @@
+{
+  "name": "onlyfans-downloader-extension",
+  "version": "4.5.15",
+  "description": "A Chrome extension that adds download buttons for OnlyFans images and videos",
+  "main": "background.js",
+  "scripts": {
+    "build": "echo 'No build process needed for Chrome extension'",
+    "test": "echo 'Run manual testing in Chrome'",
+    "lint": "echo 'No linter configured - use browser console for errors'",
+    "security": "echo 'Security checks run via GitHub Actions'",
+    "package": "zip -r onlyfans-downloader-v4.5.15.zip . -x '*.git*' 'node_modules/*' '*.DS_Store' '*.log'"
+  },
+  "keywords": [
+    "chrome-extension",
+    "onlyfans",
+    "downloader",
+    "manifest-v3",
+    "javascript"
+  ],
+  "author": "Extension Developer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/onlyfans-downloader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/onlyfans-downloader/issues"
+  },
+  "homepage": "https://github.com/yourusername/onlyfans-downloader#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {},
+  "dependencies": {},
+  "browserslist": [
+    "Chrome >= 88"
+  ],
+  "manifest": {
+    "version": 3,
+    "permissions": [
+      "storage",
+      "downloads"
+    ],
+    "host_permissions": [
+      "*://*.onlyfans.com/*"
+    ]
+  }
+} 
