@@ -54,6 +54,152 @@ The extension now requests only the minimum necessary permissions:
 ### **For Production:**
 - The extension should be published to the Chrome Web Store for automatic updates
 
+## 🌐 **Browser Installation Guide**
+
+### **Google Chrome**
+1. **Download** the extension files to your computer
+2. **Open Chrome** and go to `chrome://extensions/`
+3. **Enable "Developer mode"** (toggle switch in top right corner)
+4. **Click "Load unpacked"** button
+5. **Select the extension folder** containing `manifest.json`
+6. **Extension should appear** in your extensions list
+7. **Pin the extension** to toolbar for easy access (optional)
+8. **Visit OnlyFans** and start using!
+
+### **Microsoft Edge**
+1. **Download** the extension files to your computer
+2. **Open Edge** and go to `edge://extensions/`
+3. **Enable "Developer mode"** (toggle switch in top right corner)
+4. **Click "Load unpacked"** button
+5. **Select the extension folder** containing `manifest.json`
+6. **Extension should appear** in your extensions list
+7. **Pin the extension** to toolbar for easy access (optional)
+8. **Visit OnlyFans** and start using!
+
+### **Brave Browser**
+1. **Download** the extension files to your computer
+2. **Open Brave** and go to `brave://extensions/`
+3. **Enable "Developer mode"** (toggle switch in top right corner)
+4. **Click "Load unpacked"** button
+5. **Select the extension folder** containing `manifest.json`
+6. **Extension should appear** in your extensions list
+7. **Pin the extension** to toolbar for easy access (optional)
+8. **Visit OnlyFans** and start using!
+
+### **Opera Browser**
+1. **Download** the extension files to your computer
+2. **Open Opera** and go to `opera://extensions/`
+3. **Enable "Developer mode"** (toggle switch in top right corner)
+4. **Click "Load unpacked"** button
+5. **Select the extension folder** containing `manifest.json`
+6. **Extension should appear** in your extensions list
+7. **Pin the extension** to toolbar for easy access (optional)
+8. **Visit OnlyFans** and start using!
+
+### **Vivaldi Browser**
+1. **Download** the extension files to your computer
+2. **Open Vivaldi** and go to `vivaldi://extensions/`
+3. **Enable "Developer mode"** (toggle switch in top right corner)
+4. **Click "Load unpacked"** button
+5. **Select the extension folder** containing `manifest.json`
+6. **Extension should appear** in your extensions list
+7. **Pin the extension** to toolbar for easy access (optional)
+8. **Visit OnlyFans** and start using!
+
+### **Firefox (Limited Support)**
+⚠️ **Note**: This extension is primarily designed for Chromium-based browsers. Firefox support may be limited.
+
+1. **Download** the extension files to your computer
+2. **Open Firefox** and go to `about:debugging`
+3. **Click "This Firefox"** tab
+4. **Click "Load Temporary Add-on"**
+5. **Select the `manifest.json` file** from the extension folder
+6. **Extension should appear** in the list
+7. **Visit OnlyFans** and test functionality
+
+**Firefox Limitations:**
+- May not support all Chrome extension APIs
+- Some features might not work as expected
+- Requires manual reloading after browser restart
+
+## 📦 **Installation Methods**
+
+### **Method 1: Load Unpacked (Recommended for Development)**
+- **Best for**: Testing, development, custom modifications
+- **Pros**: Easy to update, full control, no signing required
+- **Cons**: Requires developer mode, manual updates
+
+### **Method 2: Chrome Web Store (Recommended for Users)**
+- **Best for**: Regular users, automatic updates
+- **Pros**: Automatic updates, easy installation, verified
+- **Cons**: Requires publishing, review process
+
+### **Method 3: CRX File (Advanced Users)**
+- **Best for**: Advanced users, offline installation
+- **Pros**: Single file, portable
+- **Cons**: Requires manual updates, security warnings
+
+## 🔧 **Troubleshooting Installation**
+
+### **Extension Not Loading:**
+1. **Check file structure** - Ensure `manifest.json` is in the root folder
+2. **Verify manifest version** - Should be `"manifest_version": 3`
+3. **Check for errors** - Look at the extensions page for error messages
+4. **Try different folder** - Move extension to a different location
+5. **Restart browser** - Sometimes needed after enabling developer mode
+
+### **Extension Not Working:**
+1. **Check permissions** - Ensure extension has necessary permissions
+2. **Verify OnlyFans URL** - Make sure you're on `onlyfans.com`
+3. **Check console errors** - Press F12 and look for error messages
+4. **Disable other extensions** - Some may interfere
+5. **Refresh the page** - Sometimes needed after installation
+
+### **Common Error Messages:**
+- **"Manifest file is missing or unreadable"** - Check file path and permissions
+- **"Extension is invalid"** - Verify manifest.json syntax
+- **"Permission denied"** - Check folder permissions
+- **"Could not load extension"** - Try restarting browser
+
+## 🎯 **Post-Installation Setup**
+
+### **First Time Setup:**
+1. **Visit OnlyFans** and log in to your account
+2. **Navigate to a creator's profile** or posts
+3. **Look for download buttons** under posts (may take a few seconds)
+4. **Click the extension icon** to access settings
+5. **Configure quality preferences** (Original, 240p, 720p)
+6. **Enable folder organization** if desired
+
+### **Verifying Installation:**
+- ✅ **Extension icon appears** in browser toolbar
+- ✅ **Download buttons appear** under OnlyFans posts
+- ✅ **Settings popup opens** when clicking extension icon
+- ✅ **Downloads start** when clicking download buttons
+
+### **Recommended Settings:**
+- **Video Quality**: Original (for best quality)
+- **Folder Organization**: Enabled (for better file management)
+- **Auto-download**: Disabled (for user control)
+
+## 🔒 **Security Notes**
+
+### **Developer Mode:**
+- **Only enable** when installing unpacked extensions
+- **Disable after installation** for better security
+- **Be careful** with extensions from unknown sources
+
+### **Extension Permissions:**
+- **storage**: Saves your preferences
+- **downloads**: Allows file downloads
+- **onlyfans.com**: Access to OnlyFans content only
+
+### **Safe Installation:**
+- **Download from trusted sources** only
+- **Verify file integrity** before installation
+- **Check permissions** before enabling
+- **Report suspicious behavior** immediately
+
 ## 🎯 **Usage**
 
 1. **Subscribe/follow** a creator on OnlyFans
@@ -164,6 +310,7 @@ This project is for educational purposes. Users are responsible for complying wi
 
 ## 🔗 **Support**
 
+- **Twitter**: [@extension_dev](https://twitter.com/extension_dev)
 - **Issues**: Check the console for error messages
 - **Updates**: Follow the developer on Twitter for announcements
 
