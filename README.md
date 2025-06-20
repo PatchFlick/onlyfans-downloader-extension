@@ -28,6 +28,7 @@ A Chrome extension that adds download buttons for OnlyFans images and videos.
 ### **📚 Documentation**
 - [Changelog](#-changelog)
 - [Support](#-support)
+- [AI Contributors](#-ai-contributors)
 
 ---
 
@@ -345,4 +346,58 @@ This project is for educational purposes. Users are responsible for complying wi
 
 ---
 
-**Note**: This extension requires an active OnlyFans subscription to access content. Batch downloading is not available due to OnlyFans restrictions. 
+**Note**: This extension requires an active OnlyFans subscription to access content. Batch downloading is not available due to OnlyFans restrictions.
+
+## 🤖 **AI Contributors**
+
+This extension has been modernized and enhanced with the assistance of AI experts:
+
+### **Development Team:**
+- **🖥️ Cursor AI** - Primary development and modernization
+- **👨‍💻 Mike (AI 10x Coder)** - Code review and optimization
+- **🔒 John (AI Cybersecurity Expert)** - Security audit and vulnerability assessment
+
+### **Contributions:**
+- **Manifest V3 Migration** - Modern Chrome extension standards
+- **Security Hardening** - Comprehensive security improvements
+- **DM Support Enhancement** - Robust direct message functionality
+- **Code Modernization** - ES6+ JavaScript, no jQuery dependency
+- **Documentation** - Comprehensive guides and troubleshooting
+
+---
+
+## ⚠️ **Important Disclaimer**
+
+### **Support & Maintenance:**
+- **This extension is provided "as is"** without warranty
+- **No guaranteed support** - use at your own discretion
+- **AI contributors are not responsible** for:
+  - Extension breaking due to OnlyFans changes
+  - Browser updates affecting functionality
+  - User account issues or violations
+  - Any damages or losses
+
+### **User Responsibility:**
+- **Test thoroughly** before relying on the extension
+- **Monitor for updates** and OnlyFans changes
+- **Report issues** through GitHub but understand response is not guaranteed
+- **Use responsibly** and in compliance with OnlyFans terms of service
+- **Backup important content** using multiple methods
+
+### **AI Limitations:**
+- **AI contributors cannot provide ongoing support**
+- **No real-time monitoring** of OnlyFans changes
+- **No automatic updates** when OnlyFans breaks functionality
+- **Users must take responsibility** for their own usage
+
+### **If Extension Stops Working:**
+1. **Check OnlyFans for changes** - they may have updated their site
+2. **Try refreshing the page** - sometimes fixes temporary issues
+3. **Check browser console** for error messages
+4. **Disable other extensions** that might interfere
+5. **Report issues on GitHub** but understand fixes may not be immediate
+6. **Consider alternative methods** for content backup
+
+**Bottom Line: Use this extension at your own discretion and responsibility. The AI contributors have done their best to create a robust, secure, and modern extension, but ongoing functionality depends on OnlyFans not making breaking changes.**
+
+--- 
