@@ -2,6 +2,35 @@
 
 A Chrome extension that adds download buttons for OnlyFans images and videos.
 
+## 📋 **Table of Contents**
+
+### **🚀 Getting Started**
+- [Installation](#-installation)
+- [Browser Installation Guide](#-browser-installation-guide)
+- [Usage](#-usage)
+- [Post-Installation Setup](#-post-installation-setup)
+
+### **💬 Features**
+- [Direct Message (DM) Support](#-direct-message-dm-support)
+- [Settings](#️-settings)
+- [Installation Methods](#-installation-methods)
+
+### **🔧 Technical**
+- [Technical Details](#-technical-details)
+- [Troubleshooting](#-troubleshooting)
+- [Troubleshooting Installation](#-troubleshooting-installation)
+
+### **🔒 Security & Legal**
+- [Security Notes](#-security-notes)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+### **📚 Documentation**
+- [Changelog](#-changelog)
+- [Support](#-support)
+
+---
+
 ## 🚀 **Updated for 2025 - Modern & Secure**
 
 This extension has been completely modernized with the latest security standards and best practices:
